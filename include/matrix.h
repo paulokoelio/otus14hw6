@@ -24,16 +24,6 @@ public:
     Matrix(const Matrix& x) = delete;
     Matrix(Matrix &&x) = delete;
     ~Matrix() {}
-    Matrix &operator=(const Matrix &x)
-    {
-        // ......;
-        return *this;
-    }
-    Matrix &operator=(Matrix &&x)
-    {
-        // ......;
-        return *this;
-    }
 
     T value(const size_t index_i, const size_t index_j) const
     {
